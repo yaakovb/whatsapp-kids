@@ -1,0 +1,60 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build / dist
+dist/
+build/
+out/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# Android
+apps/android/.gradle/
+apps/android/local.properties
+apps/android/**/build/
+apps/android/.idea/
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Env & secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.keystore
+
+# Data / runtime
+*.db
+*.sqlite
+*.sqlite3
+data/
+services/api/data/
+
+# Logs & caches
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.cache/
+.turbo/
+.vite/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+
+# Test / coverage
+coverage/
+.nyc_output/
