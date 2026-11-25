@@ -1,0 +1,149 @@
+:root {
+  --bg: #0f1a14;
+  --bg-panel: #17261d;
+  --ink: #e8f0ea;
+  --muted: #9bb3a4;
+  --accent: #3d9b6a;
+  --accent-ink: #062012;
+  --line: #2a3d31;
+  --danger: #c45c4a;
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  color: var(--ink);
+  background: radial-gradient(1200px 600px at 10% -10%, #1c3a2a, transparent),
+    radial-gradient(900px 500px at 100% 0%, #243028, transparent), var(--bg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+.brand {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 0.5rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 650;
+  margin: 0 0 0.5rem;
+}
+
+.lede {
+  color: var(--muted);
+  margin: 0 0 1.75rem;
+  line-height: 1.5;
+}
+
+.panel {
+  background: color-mix(in srgb, var(--bg-panel) 92%, black);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 0.35rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: #0c1510;
+  color: var(--ink);
+  margin-bottom: 0.85rem;
+}
+
+button {
+  appearance: none;
+  border: 0;
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 600;
+  padding: 0.65rem 1rem;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  margin-left: 0.5rem;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error {
+  color: var(--danger);
+  font-size: 0.9rem;
+  margin: 0.5rem 0 0;
+}
+
+.meta {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+
+.messages {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.messages li {
+  border-top: 1px solid var(--line);
+  padding-top: 0.65rem;
+}
+
+.messages .who {
+  font-size: 0.8rem;
+  color: var(--accent);
+}
+
+.messages .when {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-left: 0.5rem;
+}
+
+.messages .body {
+  margin: 0.25rem 0 0;
+  line-height: 1.45;
+  white-space: pre-wrap;
+}
+
+.empty {
+  color: var(--muted);
+  margin: 0;
+}

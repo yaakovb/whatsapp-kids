@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WhatsApp Kids</string>
+    <string name="tagline">Family messenger scaffold — not WhatsApp</string>
+    <string name="mode_kid">Kid mode</string>
+    <string name="mode_parent">Parent mode</string>
+    <string name="login">Log in</string>
+    <string name="send">Send</string>
+    <string name="refresh">Refresh</string>
+    <string name="display_name">Display name</string>
+    <string name="message_hint">Type a message</string>
+    <string name="api_base">API base (emulator: http://10.0.2.2:8787)</string>
+</resources>
